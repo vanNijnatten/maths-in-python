@@ -1,2 +1,3 @@
 uv sync --all-extras --dev
-./.venv/bin/pre-commit install
+. .venv/bin/activate
+pre-commit install
