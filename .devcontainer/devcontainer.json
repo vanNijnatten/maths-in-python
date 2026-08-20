@@ -2,8 +2,10 @@
 // README at: https://github.com/devcontainers/templates/tree/main/src/python
 {
 	"name": "Maths-in-Python",
-	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
-	"image": "mcr.microsoft.com/devcontainers/python:3.14",
+	// Build from a Dockerfile so OS packages are installed during image creation.
+	"build": {
+		"dockerfile": "Dockerfile"
+	},
 	// could also be "image": "ghcr.io/astral-sh/uv:latest" if you want to use the uv image directly,
 
 	// Features to add to the dev container. More info: https://containers.dev/features.
@@ -47,12 +49,9 @@
 	// 		"onAutoForward": "notify"
 	// 	}
 	// },
-
+	
 	// Use 'postCreateCommand' to run commands after the container is created.
-	"postCreateCommand": [
-		// "curl -LsSf https://astral.sh/uv/install.sh | sh",
-		"uv sync --all-extras --dev"
-	]
+	"postCreateCommand": "uv sync --all-extras --dev"
 
 	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
 	// "remoteUser": "root"
