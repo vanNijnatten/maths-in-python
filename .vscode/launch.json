@@ -5,11 +5,11 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Data-Preprocessor: All sources",
+            "name": "Maths-in-Python: Debug",
             "type": "debugpy",
             "request": "launch",
-            "program": "${workspaceFolder}/src/__main__.py",
-            "cwd": "${workspaceFolder}/src/",
+            "program": "${workspaceFolder}/src/maths_in_python/__main__.py",
+            "cwd": "${workspaceFolder}/src/maths_in_python/",
             "console": "integratedTerminal",
             "args": [
                 "--environment", "dev",
