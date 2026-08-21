@@ -1,6 +1,6 @@
 # Maths in Python
 
-![Smoke Test](https://github.com/vanNijnattenDataCraft/data_preprocesser/actions/workflows/smoke_test.yaml/badge.svg)
+![Smoke Test](https://github.com/vanNijnatten/maths-in-python/actions/workflows/smoke_test.yaml/badge.svg)
 [![security: bandit](https://img.shields.io/badge/security-bandit-yellow.svg)](https://github.com/PyCQA/bandit)
 
 The Maths in Python is a project on learning maths using python...
